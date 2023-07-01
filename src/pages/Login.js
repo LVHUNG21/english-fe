@@ -65,6 +65,7 @@ function LoginPage() {
       }, UX.DELAY_TIME);
     } catch (error) {
       dispatch(setMessage(error.response?.data?.message, "error"));
+      console.log('error dang nhap ');
       setLoading(false);
     }
   };
